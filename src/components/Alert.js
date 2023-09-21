@@ -5,6 +5,7 @@ function Alert(props) {
     props.alert && (
       <div
         className={`alert alert-${props.alert.type.toLowerCase()} alert-dismissible fade show`}
+        style={{ zIndex: "5" }}
         role="alert"
       >
         <strong>{props.alert.type}: </strong>
